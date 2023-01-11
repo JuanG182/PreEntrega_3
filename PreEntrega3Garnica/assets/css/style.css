@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navegador {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.topnav {
+  display: flex;
+  flex-direction: row;
+}
+
+.topnav a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.labelMenu, .inputMenu {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav {
+    max-height: 0;
+    flex-direction: column;
+    transition: 0.5s;
+    overflow: hidden;
+  }
+  .labelMenu {
+    display: block;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+  }
+  .inputMenu:checked + .topnav {
+    max-height: 500px;
+  }
+}
+body {
+  overflow-x: hidden;
+}
+
+.texto-explicacion {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  gap: 5px;
+  grid-template-areas: "main main" "main main";
+}
+
+.sierras:hover {
+  transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
+
+.logon:hover {
+  transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
+
+.video {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 520px;
+  height: 360px;
+}
+
+@media screen and (max-width: 600px) {
+  .texto-explicacion {
+    display: flex;
+    flex-direction: column;
+  }
+  .video {
+    width: auto;
+    height: 250px;
+  }
+}
+.info-ubicacion {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  gap: 5px;
+  grid-template-areas: "main main" "main main";
+}
+
+.mapa {
+  width: 600px;
+  height: 600px;
+}
+
+.texto-ubicacion {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.form-check {
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .info-ubicacion {
+    display: block;
+    margin: 10px;
+  }
+  .mapa {
+    width: auto;
+    height: 400px;
+  }
+  .texto-ubicacion {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .form-check {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+.formulario {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: auto;
+  margin: 20px;
+  grid-template-areas: "main main" "main main" "main main" "main main";
+}
+
+.foto {
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .formulario {
+    display: block;
+    padding: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */

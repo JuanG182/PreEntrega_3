@@ -1,0 +1,41 @@
+.info-ubicacion{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    gap: 5px;
+    grid-template-areas: "main main"
+                         "main main";
+}
+
+.mapa{
+    width: 600px;
+    height: 600px;
+}
+
+.texto-ubicacion{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.form-check{
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .info-ubicacion{
+        display: block;
+        margin: 10px;
+    }
+    .mapa{
+        width: auto;
+        height: 400px;
+    }
+    .texto-ubicacion{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .form-check{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
